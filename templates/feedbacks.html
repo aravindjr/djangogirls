@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>All Feedbacks</title>
+  </head>
+  <body>
+    <h1>All feedbacks</h1>
+    {% for f in feedbacks %}
+Name: <h2>{{ f.user }}</h2>
+Title: <h2>{{ f.title }}</h2>
+Feedback: </br>
+<h3>{{ f.body }}</br>
+    {% endfor  %}
+  </body>
+</html>
